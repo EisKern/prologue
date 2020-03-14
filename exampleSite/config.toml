@@ -1,76 +1,84 @@
-languageCode = "en-us"
+# Built-in Variables
+author = "YuK"
+baseurl = "https://eiskern.com/"
+copyright = "YuK"
+disqusshortname = ""
+googleanalytics = ""
 title = "Prologue"
-baseurl = "http://example.org/"
 theme = "prologue"
 
+languageCode = "en-us"
+
 [params]
-  name = "Jane Doe"
-  description = "Hyperspace Engineer"
-  copyright = "Untitled."
+    name = "Jane Doe"
+    description = "Hyperspace Engineer"
 
-[[params.social]]
-  medium = "twitter"
-  icon = "twitter"
-  link = "#"
+# intro(top), about, portfolio, contact
+[[params.contents]]
+    name = "intro"
+    title = "Intro"
+    href = "top"
+    icon = "fa-home"
 
-[[params.social]]
-  medium = "facebook"
-  icon = "facebook"
-  link = "#"
+[[params.contents]]
+    name = "about"
+    title = "About Me"
+    href = "about"
+    icon = "fa-user"
 
-[[params.social]]
-  medium = "github"
-  icon = "github"
-  link = "#"
+[[params.contents]]
+    name = "portfolio"
+    title = "Portfolio"
+    href = "portfolio"
+    icon = "fa-th"
 
-[[params.social]]
-  medium = "dribbble"
-  icon = "dribbble"
-  link = "#"
+[[params.contents]]
+    name = "contact"
+    title = "Contact"
+    href = "contact"
+    icon = "fa-envelope"
 
-[[params.social]]
-  medium = "email"
-  icon = "envelope"
-  link = "#"
+# contents in portfolio
+[[params.portfolio]]
+    title = "Ipsum Feugiat"
+    alt = ""
+    source = "img/pic02.jpg"
+    url = "#"
 
-# Portfolio column one
+[[params.portfolio]]
+    title = "Rhoncus Semper"
+    alt = ""
+    source = "img/pic03.jpg"
+    url = "#"
 
-[[params.portfolio1]]
-  title = "Ipsum Feugiat"
-  alt = ""
-  source = "img/pic02.jpg"
-  url = "#"
+[[params.portfolio]]
+    title = "Magna Nullam"
+    alt = ""
+    source = "img/pic04.jpg"
+    url = "#"
 
-[[params.portfolio1]]
-  title = "Rhoncus Semper"
-  alt = ""
-  source = "img/pic03.jpg"
-  url = "#"
+[[params.portfolio]]
+    title = "Natoque Vitae"
+    alt = ""
+    source = "img/pic05.jpg"
+    url = "#"
 
-# Portfolio column two
+[[params.portfolio]]
+    title = "Dolor Penatibus"
+    alt = ""
+    source = "img/pic06.jpg"
+    url = "#"
 
-[[params.portfolio2]]
-  title = "Magna Nullam"
-  alt = ""
-  source = "img/pic04.jpg"
-  url = "#"
+[[params.portfolio]]
+    title = "Orci Convallis"
+    alt = ""
+    source = "img/pic07.jpg"
+    url = "#"
 
-[[params.portfolio2]]
-  title = "Natoque Vitae"
-  alt = ""
-  source = "img/pic05.jpg"
-  url = "#"
 
-# Portfolio column 3
-
-[[params.portfolio3]]
-  title = "Dolor Penatibus"
-  alt = ""
-  source = "img/pic06.jpg"
-  url = "#"
-
-[[params.portfolio3]]
-  title = "Orci Convallis"
-  alt = ""
-  source = "img/pic07.jpg"
-  url = "#"
+[social]
+    twitter = "EisKern"
+    github = "EisKern"
+    facebook = ""
+    dribbble = ""
+    email = ""

@@ -1,0 +1,41 @@
+baseurl: "http://example.org/"
+title: "Prologue"
+languageCode: "en-us"
+theme: "prologue"
+
+params:
+  name: "Jane Doe"
+  description: "Hyperspace Engineer"
+  copyright: "Untitled."
+
+  social:
+    twitter:
+      medium: "twitter"
+      icon: "twitter"
+      link: "#"
+
+    facebook:
+      medium: "facebook"
+      icon: "facebook"
+      link: "#"
+
+    github:
+      medium: "github"
+      icon: "github"
+      link: "#"
+
+    dribbble:
+      medium: "dribbble"
+      icon: "dribbble"
+      link: "#"
+
+    email:
+      medium: "email"
+      icon: "envelope"
+      link: "#"
+
+
+
+
+
+
