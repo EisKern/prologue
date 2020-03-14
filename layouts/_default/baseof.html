@@ -4,7 +4,7 @@
 <body>
     {{ partial "header" . }}
 
-    {{ partial "main" . }}
+    {{ block "main" . }}{{ end }}
 
     {{ partial "footer" . }}
     {{ partial "scripts" . }}
