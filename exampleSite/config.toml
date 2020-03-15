@@ -1,4 +1,3 @@
-# Built-in Variables
 author = "YuK"
 baseurl = "https://eiskern.com/"
 copyright = "YuK"
@@ -37,6 +36,7 @@ languageCode = "en-us"
     title = "Contact"
     href = "contact"
     icon = "fa-envelope"
+
 
 # contents in portfolio
 [[params.portfolio]]
