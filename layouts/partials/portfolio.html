@@ -10,7 +10,8 @@
             {{ range .top.Site.Params.portfolio }}
                 <div class="4u 12u$(mobile)">
                     <article class="item">
-                        <a href="{{ .url }}" class="image fit image_portfolio"><img src="{{ .source }}" alt="{{ .alt }}" />
+                        <a href="{{ .url }}" class="image fit image_portfolio" target=”_blank” rel=”noopener”>
+                            <img src="{{ .source }}" alt="{{ .alt }}" />
                             <header>
                                 <h3>{{ .title }}</h3>
                             </header>
