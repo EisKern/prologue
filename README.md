@@ -40,3 +40,10 @@ You will need to use an external service for the contact form since static sites
 ## License
 
 This theme is released under the CC BY 3.0 license. For more information, read the [License](https://github.com/sethmacleod/prologue/blob/master/LICENSE.md).
+
+
+## References
+- https://blog.unresolved.xyz/how-to-make-of-hugo-theme/
+- https://ottan.xyz/hugo-template-partial-define-block-20190101/
+- https://maku77.github.io/hugo/layout/template-types.html
+- https://maku77.github.io/hugo/template/variable.html
