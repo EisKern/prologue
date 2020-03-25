@@ -2,6 +2,10 @@
 <div id="main">
     {{ $top := . }}
     {{ range .Site.Params.Contents }}
-        {{ partial .name $top }}
+        {{ if eq .name "portfolio" }}
+            {{ partial .name (dict "content" . "top" $top) }}
+        {{ else }}
+            {{ partial .name . }}
+        {{ end }}
     {{ end }}
 </div>

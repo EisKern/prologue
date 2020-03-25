@@ -1,21 +1,16 @@
 <!-- Portfolio -->
 <section id="portfolio" class="two">
     <div class="container">
-
         <header>
             <h2>Portfolio</h2>
         </header>
-
-        <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-            egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-            Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-            fusce hendrerit lacus ridiculus.</p>
+        <p>{{ .content.description }}</p>
 
         <div class="row">
-            {{ range .Site.Params.portfolio }}
+            {{ range .top.Site.Params.portfolio }}
                 <div class="4u 12u$(mobile)">
                     <article class="item">
-                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" />
+                        <a href="{{ .url }}" class="image fit image_portfolio"><img src="{{ .source }}" alt="{{ .alt }}" />
                             <header>
                                 <h3>{{ .title }}</h3>
                             </header>
@@ -24,41 +19,5 @@
                 </div>
             {{ end }}
         </div>
-<!--
-        <div class="row">
-            <div class="12u 12u$(mobile)">
-                {{ range .Site.Params.portfolio }}
-                    <article class="item">
-                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                        <header>
-                            <h3>{{ .title }}</h3>
-                        </header>
-                    </article>
-                {{ end }}
-            </div>
-
-            <div class="4u 12u$(mobile)">
-                {{ range .Site.Params.portfolio2 }}
-                <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                        <h3>{{ .title }}</h3>
-                    </header>
-                </article>
-                {{ end }}
-            </div>
-
-            <div class="4u 12u$(mobile)">
-                {{ range .Site.Params.portfolio3 }}
-                <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                        <h3>{{ .title }}</h3>
-                    </header>
-                </article>
-                {{ end }}
-            </div>
-        </div>
--->
     </div>
 </section>
