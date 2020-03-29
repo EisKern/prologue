@@ -3,9 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/main.css" />
     <title>{{ .Title }}</title>
-    {{ if .Site.Params.favicon }}
-        <link rel="shortcut icon" href="{{ .Site.Params.favicon }}">
-    {{ end }}
+
+    {{ $favicon := "favicon.ico" }}
+    <link rel="shortcut icon" href="{{ $favicon | relURL }}">
 
     <!-- Google Analytics -->
     {{ template "_internal/google_analytics_async.html" . }}
